@@ -1,13 +1,22 @@
 #include <stdio.h>
 
-int main(){
-    enum gender {
+int main()
+{
+    typedef enum{
         male,
         female
-    } ;
+    }gender;
 
-    enum gender mygender;
-    mygender = 0;
+    gender person = female;
+    printf("%i", person);
 
-    printf("%d", mygender);
+    // enum gender {
+    //     male,
+    //     female
+    // } ;
+
+    // enum gender mygender;
+    // mygender = 0;
+
+    // printf("%d", mygender);
 }
